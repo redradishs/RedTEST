@@ -1,0 +1,37 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+<div class="container main">
+    <div class="title">
+        <h1><span class="red">Red</span>TEST</h1>
+        <h6>Your internet speed is</h6>
+    </div>
+<div class="test">
+    <div *ngIf="speedMbps !== 0">
+        <h1 class="speed">{{ speedMbps }}</h1>
+    </div> 
+    <div class="data">
+        <h1>MBPS</h1>
+        <p (click)="getSpeed"><i class="fa-solid fa-arrows-rotate"></i></p>
+    </div>
+
+
+
+</div>
+    <button (click)="showMoreInfor()" class="buttoninfo">Show more info</button>
+    <div class="moreinfo" *ngIf="showMoreInfo">
+        <div *ngIf="ipinformtaion">
+            <p>IP: {{ipinformtaion}}</p>
+        </div>
+        <p>Country: PH</p>
+        <p>Speed: {{speedMbps}}</p>
+        <p>Kbps: {{speedKbps}}</p>
+    </div>
+
+
+
+
+</div>
