@@ -1,5 +1,5 @@
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -22,13 +22,18 @@
 
 </div>
     <button (click)="showMoreInfor()" class="buttoninfo">Show more info</button>
-    <div class="moreinfo" *ngIf="showMoreInfo">
-        <div *ngIf="ipinformtaion">
-            <p>IP: {{ipinformtaion}}</p>
+    <div *ngIf="showMoreInfo">
+        <div class="moreinfo">
+            <div *ngIf="ipinformtaion">
+                <p>IP: {{ipinformtaion}}</p>
+            </div>
+            <p>Country: PH</p>
+            <p>Speed: {{speedMbps}}</p>
+            <p>Kbps: {{speedKbps}}</p>
         </div>
-        <p>Country: PH</p>
-        <p>Speed: {{speedMbps}}</p>
-        <p>Kbps: {{speedKbps}}</p>
+        <div class="rights">
+            All rights ICTe Solutions
+        </div>
     </div>
 
 

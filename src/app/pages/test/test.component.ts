@@ -36,6 +36,7 @@ export class TestComponent implements OnInit {
       this.speedMbps = data.speedMbps;
       this.speedBps = data.speedBps;
       this.speedKbps = data.speedKbps;
+      console.log("All rights reserved ICTe Solutions 2024");
     });
   }
 
