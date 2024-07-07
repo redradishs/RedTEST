@@ -7,5 +7,8 @@ This Angular Fun project RedTEST measures you internet connection download speed
 2. The application will download a file and calculate the download speed in Mbps.
 3. Click the Show more info button to view detailed metrics like speed in Kbps duration, bits loaded, and IP Address.
 
+# Demo Page
+http://redtest.unaux.com/
+
 # Project 
 A Project under ICTe SOlutions 2024
